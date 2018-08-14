@@ -6,17 +6,17 @@ use Rain\tpl;
 
 class Mailer {
 
-	const USERNAME = "###";
-	const PASSWORD = "###";
+	const USERNAME = "dasilvafernando.dev@gmail.com";
+	const PASSWORD = "oculos23";
 	const NAME_FROM = "Hcode Store";
 
-	private $mail
+	private $mail;
 
 	public function __construct($toAddress, $toName, $subject, $tplName, $data = array())
 	{
 
 		$config = array(
-			"tpl_dir"       => $_SERVER["DOCUMENT_ROOT"]."views/email/",
+			"tpl_dir"       => $_SERVER["DOCUMENT_ROOT"]."/views/email/",
 			"cache_dir"     => $_SERVER["DOCUMENT_ROOT"]."/views-cache/",
 			"debug"         => false
 		);
